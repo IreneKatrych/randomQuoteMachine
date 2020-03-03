@@ -1,0 +1,80 @@
+/*
+This is CSS file for RandomQuoteMachine web page
+*/
+
+body {
+    background-color: #52D7E8;
+    color: #52D7E8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#quote-box{
+    position: relative;
+    width: 40vw;
+    padding: 30px 20px 30px 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: bisque;
+    height: auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#text {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#author {
+    text-align: right;
+    font-size: 30px;
+    padding: 5px;
+    margin: 15px;
+}
+
+#tweet-quote {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #52D7E8;
+    color: bisque;
+    padding: 5px;
+    margin: 10px;
+    height: 2em;
+}
+
+#tweet-logo {
+    max-width: 1.5em;
+    display: block;
+    height: auto;
+}
+
+#new-quote {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #52D7E8;
+    color: bisque;
+    padding: 5px;
+    margin: 10px;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
