@@ -210,29 +210,28 @@ const quotes = [{
     "quoteAuthor": "Wayne Dyer"
     }];
 
- let getRandomNumber = () => {
+//function to get random number
+let getRandomNumber = () => {
      return Math.floor(Math.random() * quotes.length);
- }
+}
 
- const getNewQuote = () => {
-     let newNum = getRandomNumber();
-     let randomQuote = quotes[newNum];
+//get new quote from array of quotes with random index
+const getNewQuote = () => {
+    let newNum = getRandomNumber();
+    let randomQuote = quotes[newNum];
     return randomQuote;
- }
- 
- const setTextToHTML = () => {
-   let newQuote = getNewQuote();
+}
+
+//bound quote to html tags and create tweet
+const setTextToHTML = () => {
+    let newQuote = getNewQuote();
     $('#text').text(newQuote.quoteText);
     $('#author').text(newQuote.quoteAuthor);
     $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + newQuote.quoteText + '" ' + newQuote.quoteAuthor));
- }
- 
-  $(document).ready(setTextToHTML);
-  $('#new-quote').on('click', setTextToHTML);
+}
 
+//load random quote for first time
+$(document).ready(setTextToHTML);
 
-
- 
-        
-
- 
+//load random quote when button 'new quote' is clicked
+$('#new-quote').on('click', setTextToHTML);

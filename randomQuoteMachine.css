@@ -12,8 +12,7 @@ body {
     height: 100vh;
 }
 
-
-#quote-box{
+#quote-box {
     position: relative;
     width: 40vw;
     padding: 30px 20px 30px 20px;
@@ -60,15 +59,13 @@ body {
 
 #new-quote {
     text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
     border-radius: 5px;
     border: none;
     background-color: #52D7E8;
     color: bisque;
     padding:5px;
     margin: 10px;
-    height: 2.5em;
+    height: 2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -80,4 +77,34 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/* for tablets */
+@media (max-width: 800px) {
+#quote-box {
+    font-size: 15px;
+}
+
+#text {
+    font-size: 30px;
+}
+
+#author {
+    font-size: 25px;
+}
+}
+
+/* for mobiles */
+@media (max-width: 400px) {
+#quote-box {
+    font-size: 10px;
+}
+
+#text {
+    font-size: 25px;
+}
+
+#author {
+    font-size: 20px;
+}
 }
